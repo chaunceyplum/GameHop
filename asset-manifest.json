@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/chaunceyplum/GameHop/static/css/main.09096c44.chunk.css",
+    "main.js": "/chaunceyplum/GameHop/static/js/main.db1900be.chunk.js",
+    "main.js.map": "/chaunceyplum/GameHop/static/js/main.db1900be.chunk.js.map",
+    "runtime-main.js": "/chaunceyplum/GameHop/static/js/runtime-main.1b0cf0ec.js",
+    "runtime-main.js.map": "/chaunceyplum/GameHop/static/js/runtime-main.1b0cf0ec.js.map",
+    "static/css/2.e6c1e8c5.chunk.css": "/chaunceyplum/GameHop/static/css/2.e6c1e8c5.chunk.css",
+    "static/js/2.017eba69.chunk.js": "/chaunceyplum/GameHop/static/js/2.017eba69.chunk.js",
+    "static/js/2.017eba69.chunk.js.map": "/chaunceyplum/GameHop/static/js/2.017eba69.chunk.js.map",
+    "static/js/3.c7a4c0b0.chunk.js": "/chaunceyplum/GameHop/static/js/3.c7a4c0b0.chunk.js",
+    "static/js/3.c7a4c0b0.chunk.js.map": "/chaunceyplum/GameHop/static/js/3.c7a4c0b0.chunk.js.map",
+    "index.html": "/chaunceyplum/GameHop/index.html",
+    "static/css/2.e6c1e8c5.chunk.css.map": "/chaunceyplum/GameHop/static/css/2.e6c1e8c5.chunk.css.map",
+    "static/css/main.09096c44.chunk.css.map": "/chaunceyplum/GameHop/static/css/main.09096c44.chunk.css.map",
+    "static/js/2.017eba69.chunk.js.LICENSE.txt": "/chaunceyplum/GameHop/static/js/2.017eba69.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1b0cf0ec.js",
+    "static/css/2.e6c1e8c5.chunk.css",
+    "static/js/2.017eba69.chunk.js",
+    "static/css/main.09096c44.chunk.css",
+    "static/js/main.db1900be.chunk.js"
+  ]
+}
