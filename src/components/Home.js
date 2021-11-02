@@ -3,26 +3,31 @@ import { Button, Card, CardImg, Col, Container, Row } from 'react-bootstrap'
 import CardHeader from 'react-bootstrap/esm/CardHeader'
 import { CardBody } from 'reactstrap'
 import NewReleases from './NewReleases'
+import GameHopIMG from './images/undefeted.jpeg'
 
 const Home = () => {
     return (
-        <div>
-            <Container>
+        <div className="bgColor">
+            <Container className="bgColor">
                 <Row>
-                    <h1 className="text-center">
-                        GameHop Grand Opening
+                    <h1 className="text-center text-white spacer ">
+                        UNDEFEATED Grand Opening
                     </h1>
-                    <h6 className="text-center">
+                    <h6 className="text-center text-white ">
                         UP TO 25% OFF ON SALES
                     </h6>
-                    <Button className="btn-lg btn btn-dark">
+                    
+                </Row>
+                <Row className="spacer">
+                    <Col className="spacer" >
+                        <img src={GameHopIMG}  alt="./images/gamehop.jpeg" className="homePic"/>
+                    </Col>
+
+                    
+
+                    <Button className="btn-lg btn bgColor1 ">
                         LEARN MORE
                     </Button>
-                </Row>
-                <Row>
-                    <Col>
-                        <img src={'./images/gamehop.jpeg'} />
-                    </Col>
                 </Row>
                 <Row>
                     <Col>

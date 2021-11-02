@@ -10,30 +10,30 @@ const MyNav = (props) => {
     
     
     return (
-        <div>
-            <Navbar style={{backgroundColor: 'darkgrey'}} dark>
-                <NavbarBrand className="text-center" href = "/">
-                    GameHop
+        <div className="bgColor1">
+            <Navbar className="bgColor1" >
+                <NavbarBrand className="text-center text-white" href = "/">
+                    UNDEFEATED
                 </NavbarBrand>
                 <NavbarToggler onClick = {toggle} />
                 {/* <Collapse open = {isOpen} navbar> */}
-                    <Nav className="ms-auto navbar-nav justify-content " style={{backgroundColor: 'darkgrey'}} navbar>
+                    <Nav className="ms-auto navbar-nav justify-content "  >
                         <NavItem>
-                            <NavLink href="/">
+                            <NavLink className="text-center text-white" href="/">
                                 Home
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href ="/About">
+                            <NavLink className="text-center text-white" href ="/About">
                                 About
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/Shop">
+                            <NavLink className="text-center text-white" href="/Shop">
                                 Shop
                             </NavLink>
                         </NavItem>
-                        <Button className="btn-lg btn btn-dark">
+                        <Button className="btn-lg btn bgColor">
                             Cart
                         </Button>
 
