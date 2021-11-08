@@ -5,12 +5,13 @@ import { CardBody } from 'reactstrap'
 import NewReleases from './NewReleases'
 import GameHopIMG from './images/undefeted.jpeg'
 
+
 const Home = () => {
     return (
         <div className="bgColor">
             <Container className="bgColor">
                 <Row>
-                    <h1 className="text-center text-white spacer ">
+                    <h1 className="text-center text-white spacer font ">
                         UNDEFEATED Grand Opening
                     </h1>
                     <h6 className="text-center text-white ">
@@ -20,16 +21,16 @@ const Home = () => {
                 </Row>
                 <Row className="spacer">
                     <Col className="spacer" >
-                        <img src={GameHopIMG}  alt="./images/gamehop.jpeg" className="homePic"/>
+                        <img src={GameHopIMG}  alt="./images/gamehop.jpeg" className="homePic rounded"/>
                     </Col>
 
                     
 
-                    <Button className="btn-lg btn bgColor1 ">
+                    <Button className="btn-lg btn bgColor2 rounded " href="/about">
                         LEARN MORE
                     </Button>
                 </Row>
-                <Row>
+                {/* <Row>
                     <Col>
                         <Card>
                             <CardHeader className="text-center">
@@ -95,7 +96,7 @@ const Home = () => {
                 </Row>
                 <Row>
 
-                </Row>
+                </Row> */}
             </Container>
             
         </div>

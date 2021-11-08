@@ -94,7 +94,7 @@ const removeFromCart = (game) => {
                                     {games.map((game,index) => {
                                         return(
                                         <Col key={index} sm={12} md={6} lg={4} xl={3} >
-                                            <Card className="rounded bgColor1">
+                                            <Card className="rounded bgColor2">
                                                 <CardHeader>
                                                     <CardTitle className="text-center text-white">
                                                         {`${game.name} $${game.price}`}
@@ -107,7 +107,7 @@ const removeFromCart = (game) => {
                                                     </CardText>
                                                     
                                                     <Button
-                                                    className="btn btn-lg"
+                                                    className="btn btn-lg bgColor"
                                                     onClick = { () => addToCart(game)}
                                                     
                                                     >
@@ -115,6 +115,7 @@ const removeFromCart = (game) => {
                                                     </Button>
                                                 </CardBody>
                                             </Card>
+                                            <br />
                                         </Col>
                                     )})}
                                 </Row>
@@ -130,7 +131,7 @@ const removeFromCart = (game) => {
                             <div>
                                 
                                 <Card className="rounded bgColor">
-                                    <CardHeader className="bgColor1">
+                                    <CardHeader className="bgColor2">
                                         <CardTitle className="text-center text-white">
                                         {`Cart Items:${cart.length}`}
                                         </CardTitle>
@@ -141,25 +142,32 @@ const removeFromCart = (game) => {
                                         {
                                             cart.map((game , index)=>{
                                                 return(
-                                                    <Card key={index} className="bgColor1">
-                                                        <CardHeader className="bgColor1">
-                                                            <CardTitle className="text-center text-white">
-                                                                {game.name}
-                                                            </CardTitle>
-                                                        </CardHeader>
-                                                        <CardBody>
-                                                            <ul>
-                                                                <li className="unstyled text-center text-white">
-                                                                    {`$${game.price}`}
-                                                                </li>
-                                                                
-                                                                
-                                                            </ul>
-                                                            <Button onClick={() => removeFromCart(game)}>
-                                                                Remove from Cart
-                                                            </Button>
-                                                        </CardBody>
-                                                    </Card>
+                                                    <div>
+                                                        <Card key={index} className="bgColor2">
+                                                            <CardHeader className="bgColor2">
+                                                                <CardTitle className="text-center text-white">
+                                                                    {game.name}
+                                                                </CardTitle>
+                                                            </CardHeader>
+                                                            <CardBody>
+                                                                <ul>
+                                                                    <li className="unstyled text-center text-white">
+                                                                        {`$${game.price}`}
+                                                                    </li>
+                                                                    
+                                                                    
+                                                                </ul>
+                                                                <Col>
+                                                                    <Button onClick={() => removeFromCart(game)} className="bgColor">
+                                                                        Remove from Cart
+                                                                    </Button>
+                                                                </Col>
+                                                            </CardBody>
+                                                        </Card> 
+
+                                                        <br />
+                                                    </div>
+                                                    
 
                                                 )
                                             }) 
