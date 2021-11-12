@@ -19,10 +19,13 @@
 }
 .bgColor2 {
   background-color: black;
-  border: rgb(100, 170, 207);
+}
+.bgColor3 {
+  background-color: rgb(10, 17, 37);
 }
 .rounded {
-  border-radius: 15px 50px 30px 5px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 20px rgb(0, 0, 0);
 }
 .font {
   font-family: "Montserrat", sans-serif;

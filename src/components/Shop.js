@@ -136,7 +136,7 @@ const removeFromCart = (game) => {
                                         {`Cart Items:${cart.length}`}
                                         </CardTitle>
                                     </CardHeader>
-                                    <CardBody>
+                                    <CardBody className="bgColor3">
                                         
                                         
                                         {

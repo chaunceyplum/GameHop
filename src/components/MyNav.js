@@ -15,16 +15,25 @@ const MyNav = (props) => {
     return (
         <div className="bgColor1">
              <Navbar className="bgColor1 navSpacer" >
+                
+                
                 <Col className="col col-1">
                     
                 </Col>
-                <Col className="col col-2">
-                    <OffCanvasNav />
+                <Col className="col col-1 text-white">
+                    <Button className="bgColor btn-lg" href="/home">
+                    
+                        GameHop
+                    
+                    </Button>
                 </Col>
-                <Col className="col col-9 bgColor1">
+                
+                <Col className="col col-8 bgColor1 justify-content">
                 
                 </Col>
-
+                <Col className="col col-2  align-left ms-auto">
+                    <OffCanvasNav />
+                </Col>
 
             </Navbar> 
 

@@ -10,15 +10,22 @@ const Home = () => {
     return (
         <div className="bgColor">
             <Container className="bgColor">
+            <br  className="bgColor"/>
+            <br  className="bgColor"/>
                 <Row>
-                    <h1 className="text-center text-white spacer font ">
-                        UNDEFEATED Grand Opening
-                    </h1>
-                    <h6 className="text-center text-white ">
-                        UP TO 25% OFF ON SALES
-                    </h6>
+                    <Col sm={3} />
+                    <Col sm={6} >
+                        <h1 className="text-center text-white font bgColor rounded">
+                            UNDEFEATED Grand Opening
+                        </h1>
+                        <p className="text-center text-white bgColor ">
+                            UP TO 25% OFF ON SALES
+                        </p>
+                    </Col>
+                    <Col sm={3} />
                     
                 </Row>
+                <br  className="bgColor"/>
                 <Row className="spacer">
                     <Col className="spacer" >
                         <img src={GameHopIMG}  alt="./images/gamehop.jpeg" className="homePic rounded"/>
@@ -26,77 +33,21 @@ const Home = () => {
 
                     
 
-                    <Button className="btn-lg btn bgColor2 rounded " href="/about">
-                        LEARN MORE
-                    </Button>
-                </Row>
-                {/* <Row>
-                    <Col>
-                        <Card>
-                            <CardHeader className="text-center">
-                                New Realeases
-                            </CardHeader>
-                            <CardBody>
-                                
-                            
-                                
-                            </CardBody>
-
-                        </Card>
                     
-                    </Col>
-                    <Col>
-                        <Card>
-                            <CardHeader className="text-center">
-                                Best Seller
-                            </CardHeader>
-                            <CardBody>
-                                <CardImg />
-
-                                
-                            </CardBody>
-
-                        </Card>
-                    
-                    </Col>
                 </Row>
-                <Row>
-                    <Col>
-                        <Card>
-                            <CardHeader className="text-center">
-                                Consoles
-                            </CardHeader>
-                            <CardBody>
+                <Row className="spacer">
+                    <Col xs={3} />
 
-                            </CardBody>
-                        </Card>
+                    <Col xs={6} className="text-center">
+                        <Button className="btn-lg btn bgColor2 rounded " href="/about">
+                            LEARN MORE
+                        </Button>
                     </Col>
 
-                    <Col>
-                        <Card>
-                            <CardHeader className="text-center">
-                                Games
-                            </CardHeader>
-                            <CardBody>
-
-                            </CardBody>
-                        </Card>
-                    </Col>
-
-                    <Col>
-                        <Card>
-                            <CardHeader className="text-center">
-                                Accesories
-                            </CardHeader>
-                            <CardBody>
-
-                            </CardBody>
-                        </Card>
-                    </Col>
+                    <Col xs={3} />
                 </Row>
-                <Row>
-
-                </Row> */}
+                <br />
+               
             </Container>
             
         </div>

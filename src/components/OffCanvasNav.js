@@ -19,7 +19,11 @@ const OffCanvasNav = () => {
 
                 <OffcanvasHeader className="bgColor1" closeButton>
                     <OffcanvasTitle className="text-white">
-                        GameHop
+                        <Button className="bgColor btn-lg" href="/home">
+                        
+                            GameHop
+                    
+                        </Button>
                     </OffcanvasTitle>
                 </OffcanvasHeader>
 
