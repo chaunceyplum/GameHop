@@ -2,7 +2,7 @@
   "name": "ecommerce",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/chaunceyplum/GameHop",
+  "homepage": "./",
   "dependencies": {
     "bootstrap": "^5.1.3",
     "cra-template": "1.1.2",
