@@ -162,6 +162,11 @@ const removeFromCart = (game) => {
                                                                         Remove from Cart
                                                                     </Button>
                                                                 </Col>
+                                                                <Row>
+                                                                    <Col>
+                                                                        
+                                                                    </Col>
+                                                                </Row>
                                                             </CardBody>
                                                         </Card> 
 

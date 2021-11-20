@@ -18,9 +18,7 @@ const Home = () => {
                         <h1 className="text-center text-white font bgColor rounded">
                             UNDEFEATED Grand Opening
                         </h1>
-                        <p className="text-center text-white bgColor ">
-                            UP TO 25% OFF ON SALES
-                        </p>
+                        
                     </Col>
                     <Col sm={3} />
                     
@@ -31,9 +29,20 @@ const Home = () => {
                         <img src={GameHopIMG}  alt="./images/gamehop.jpeg" className="homePic rounded"/>
                     </Col>
 
-                    
+                        
 
                     
+                </Row>
+                <Row>
+                    <Col sm={3} />
+
+                    <Col>
+                        <p className="text-center text-white bgColor rounded ">
+                            UP TO 25% OFF ON SALES
+                        </p>
+                    </Col>
+
+                    <Col sm={3} />
                 </Row>
                 <Row className="spacer">
                     <Col xs={3} />
