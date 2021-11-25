@@ -6,9 +6,21 @@ import halo from './images/Halo.jpeg'
 import vanguard from "./images/Vanguard.jpeg"
 import forza from "./images/forza-Horizon5.jpeg"
 import newWorld from "./images/New-World.jpeg"
+import { connect } from 'react-redux';
+import withRouter from 'react-router-dom'
+import  games  from './games'
+
+// const mapStateToProps = state => {
+//     return{
+//         games:state.GAMES,
+//         cart:state.CART
+//     }
+// }
+
 
 const Shop = (props) => {
-    
+    // const Games =games
+    // const cart =props.cart
 
     const [cart, setCart] = useState([]);
     const [games] = useState([
@@ -83,6 +95,72 @@ const removeFromCart = (game) => {
         <div className="bgColor">
             <Container className="bgColor">
                 <Row className="spacer">
+                <aside className="block col-md-4 col-sm-6">
+              
+              <div>
+                  <h3 className="text-center text-white">
+                      Cart
+                  </h3>
+
+                  <div>
+                      
+                      <Card className="rounded bgColor">
+                          <CardHeader className="bgColor2">
+                              <CardTitle className="text-center text-white">
+                              {`Cart Items:${cart.length}`}
+                              </CardTitle>
+                          </CardHeader>
+                          <CardBody className="bgColor3">
+                              
+                              
+                              {
+                                  cart.map((game , index)=>{
+                                      return(
+                                          <div>
+                                              <Card key={index} className="bgColor2">
+                                                  <CardHeader className="bgColor2">
+                                                      <CardTitle className="text-center text-white">
+                                                          {game.name}
+                                                      </CardTitle>
+                                                  </CardHeader>
+                                                  <CardBody>
+                                                      <ul>
+                                                          <li className="unstyled text-center text-white">
+                                                              {`$${game.price}`}
+                                                          </li>
+                                                          
+                                                          
+                                                      </ul>
+                                                      <Col>
+                                                          <Button onClick={() => removeFromCart(game)} className="bgColor">
+                                                              Remove from Cart
+                                                          </Button>
+                                                      </Col>
+                                                      <Row>
+                                                          <Col>
+                                                              
+                                                          </Col>
+                                                      </Row>
+                                                  </CardBody>
+                                              </Card> 
+
+                                              <br />
+                                          </div>
+                                          
+
+                                      )
+                                  }) 
+                              }
+                              
+                          </CardBody>
+                      </Card>
+                      
+                      
+                      
+                  </div>    
+      
+              </div>
+          </aside>
                     <main className="block col-md-8 col-sm-6">
                         <h3 className="text-center text-white">
                             Shop
@@ -121,72 +199,7 @@ const removeFromCart = (game) => {
                                 </Row>
                             </div>
                     </main>
-                    <aside className="block col-md-4 col-sm-6">
-              
-                        <div>
-                            <h3 className="text-center text-white">
-                                Cart
-                            </h3>
-
-                            <div>
-                                
-                                <Card className="rounded bgColor">
-                                    <CardHeader className="bgColor2">
-                                        <CardTitle className="text-center text-white">
-                                        {`Cart Items:${cart.length}`}
-                                        </CardTitle>
-                                    </CardHeader>
-                                    <CardBody className="bgColor3">
-                                        
-                                        
-                                        {
-                                            cart.map((game , index)=>{
-                                                return(
-                                                    <div>
-                                                        <Card key={index} className="bgColor2">
-                                                            <CardHeader className="bgColor2">
-                                                                <CardTitle className="text-center text-white">
-                                                                    {game.name}
-                                                                </CardTitle>
-                                                            </CardHeader>
-                                                            <CardBody>
-                                                                <ul>
-                                                                    <li className="unstyled text-center text-white">
-                                                                        {`$${game.price}`}
-                                                                    </li>
-                                                                    
-                                                                    
-                                                                </ul>
-                                                                <Col>
-                                                                    <Button onClick={() => removeFromCart(game)} className="bgColor">
-                                                                        Remove from Cart
-                                                                    </Button>
-                                                                </Col>
-                                                                <Row>
-                                                                    <Col>
-                                                                        
-                                                                    </Col>
-                                                                </Row>
-                                                            </CardBody>
-                                                        </Card> 
-
-                                                        <br />
-                                                    </div>
-                                                    
-
-                                                )
-                                            }) 
-                                        }
-                                        
-                                    </CardBody>
-                                </Card>
-                                
-                                
-                                
-                            </div>    
-                
-                        </div>
-                    </aside>
+                   
                 </Row>
             </Container>
         </div>

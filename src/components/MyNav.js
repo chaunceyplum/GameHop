@@ -37,36 +37,7 @@ const MyNav = (props) => {
 
             </Navbar> 
 
-            {/* <Navbar>
-                <Link to="#">
-                    icon
-                </Link>
-                <Nav>
-                    <ul>
-                        <li>
-                            <Link to='#'>
-                                icon
-                            </Link>
-                        </li>
-                        {
-                            data.map((navItem, index) => {
-                                return(
-                                    <li key={index} className={navItem.className}>
-                                        <Link path={navItem.path}>
-                                            {navItem.icon}
-                                            <span>
-                                                {navItem.title}
-                                            </span>
-                                        </Link>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-                </Nav>
-
-            </Navbar> */}
-
+           
 
 
         </div>

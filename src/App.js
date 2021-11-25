@@ -10,13 +10,12 @@ import Shop from './components/Shop';
 import NewReleases from './components/NewReleases';
 import { CartProvider,CartContext } from './components/ContextComponent';
 import { Navigate, Route, Routes } from "react-router";
-import { BrowserRouter } from "react-router-dom";
-
+import { BrowserRouter, withRouter } from "react-router-dom";
+import { Provider } from 'react-redux'
 
 
 function App() {
   
-
 
   
   return (
@@ -27,14 +26,16 @@ function App() {
      
     <MyNav />
     
-    <BrowserRouter>
-      <Routes>
-          <Route path='/' element={<Navigate to='/home' />} />
-          <Route path ='/home'element={<Home />} />
-          <Route path ='/about'element={<About />} />
-          <Route path ='/Shop'element={<Shop />} />
-      </Routes>
-    </BrowserRouter>
+    
+      <BrowserRouter>
+        <Routes>
+            <Route path='/' element={<Navigate to='/home' />} />
+            <Route path ='/home'element={<Home />} />
+            <Route path ='/about'element={<About />} />
+            <Route path ='/Shop'element={<Shop />} />
+        </Routes>
+      </BrowserRouter>
+    
     
 
 
