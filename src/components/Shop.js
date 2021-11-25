@@ -131,11 +131,15 @@ const removeFromCart = (game) => {
                                                           
                                                           
                                                       </ul>
-                                                      <Col>
-                                                          <Button onClick={() => removeFromCart(game)} className="bgColor">
-                                                              Remove from Cart
-                                                          </Button>
-                                                      </Col>
+                                                      <Row>
+                                                        <Col />
+                                                        <Col>
+                                                            <Button onClick={() => removeFromCart(game)} className="bgColor mx-auto">
+                                                                Remove from Cart
+                                                            </Button>
+                                                        </Col>
+                                                          <Col />
+                                                      </Row>
                                                       <Row>
                                                           <Col>
                                                               
@@ -184,13 +188,16 @@ const removeFromCart = (game) => {
                                                         {game.releaseDate}
                                                     </CardText>
                                                     
-                                                    <Button
-                                                    className="btn btn-lg bgColor"
-                                                    onClick = { () => addToCart(game)}
-                                                    
-                                                    >
-                                                        Add To Cart
-                                                    </Button>
+                                                    <Row>
+                                                        <Col />
+                                                        <Col >
+                                                            <Button className="btn btn-lg bgColor mx-auto" onClick = { () => addToCart(game)}>
+
+                                                                Add To Cart
+                                                            </Button>
+                                                        </Col>
+                                                        <Col />
+                                                    </Row>
                                                 </CardBody>
                                             </Card>
                                             <br />
